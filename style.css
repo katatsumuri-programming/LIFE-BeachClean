@@ -1,0 +1,323 @@
+
+@font-face {
+  font-family: "antique";
+  src: url("ZenAntique-Regular.ttf");
+}
+@font-face {
+  font-family: "gennokakugogothic";
+  src: url("SourceHanSans-Medium.otf");
+}
+@font-face {
+  font-family: "gennokakumincho";
+  src: url("SourceHanSerif-Medium.otf");
+}
+body {
+  margin: 0;
+  padding: 0;
+  background-color: white;
+  width: 100%;
+  height: 100%;
+  -webkit-overflow-scrolling: touch;
+}
+*::-webkit-scrollbar {
+  display:none;
+}
+::selection {
+  background: #000;
+  color: #fff;
+}
+a {
+  color: #006e54;
+  text-decoration: none;
+  cursor: none !important;
+}
+.hidden-border {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 10px;
+  background-color: white;
+  z-index: 10;
+}
+img {
+  image-rendering: -webkit-optimize-contrast;
+}
+
+/*---------------------------------------------------------------*/
+
+section::before {
+  margin: auto;
+  font-size: 8vh;
+  font-family: "gennokakumincho";
+  font-weight: 300;
+  margin-top: 50px;
+  margin-left: 40px;
+}
+section {
+  height: 100vh;
+  box-sizing: border-box;
+  padding: 30px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background-color: white;
+  border-top: solid 1vh #000;
+  margin-top: 30vh;
+}
+
+.section-7 {
+  height: 100vh;
+}
+section:first-child {
+  border-top: none;
+  height: 100vh;
+  margin: 0;
+}
+
+
+section .explanation p:nth-child(2) {
+  margin-top: 50px;
+}
+.section-2 .text {
+  margin-left: 50px;
+}
+.section-2::before {
+  content: 'シロナガスクジラと環境問題';
+}
+section:nth-child(2) .contents_img {
+  width: 30vw;
+  display: block;
+}
+
+
+.section-3::before {
+  content: '鎌倉海岸の現状';
+}
+section:nth-child(3) .contents_img {
+  width: 40vw;
+  display: block;
+}
+section:nth-child(3) .explanation {
+  position: absolute;
+  top: 24vh;
+  left: 50vw;
+  width: 45vw;
+}
+
+.section-4::before {
+  content: '海の今後';
+}
+
+.section-5::before {
+  content: '目標';
+}
+
+.section-6::before {
+  content: '改善策';
+}
+
+.section-7::before {
+  content: '参考';
+}
+
+
+.contents_img {
+  margin-left: 5vw;
+  margin-top: 10vh;
+}
+.explanation {
+  position: absolute;
+  top: 20vh;
+  left: 45vw;
+  width: 50vw;
+}
+
+/*---------------------------------------------------------------*/
+
+.mosaic_img_area {
+  width: 90vh;
+  height: 90vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
+.mosaic_img {
+  width: 100%;
+  height: 100%;
+}
+.lens_img_box {
+  position: absolute;
+  opacity:0;
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+  pointer-events: none;
+  border-radius: 50%;
+  z-index: 99;
+  transform: translate(0,0);
+  transition: transform 0.15s;
+  transition-timing-function: ease-out;
+  top: 0;
+}
+.lens_img{
+  position: absolute;
+  transform-origin: top left;
+}
+
+/*---------------------------------------------------------------*/
+
+.catchcopy {
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  font-size: 10vh;
+  font-family: "antique";
+  font-weight: 300;
+  margin-top: 50px;
+}
+.text {
+  height: 100%;
+  margin: auto;
+  font-size: 8vh;
+  font-family: "antique";
+  font-weight: 300;
+  margin-top: 50px;
+  margin-left: 80px;
+}
+.text_1 {
+  writing-mode: vertical-rl;
+  position: absolute;
+  right: 10vw;
+  margin: 0;
+  margin-top: 20px;
+}
+.text_2 {
+  writing-mode: vertical-rl;
+  position: absolute;
+  left: 10vw;
+  margin: 0;
+  margin-top: 20px;
+}
+.text-section {
+  font-family: "gennokakumincho";
+  font-size: 3.5vh;
+}
+
+/*---------------------------------------------------------------*/
+
+#stalker {
+  pointer-events: none;
+  position: fixed;
+  top: -50px;
+  left: -50px;
+  width: 100px;
+  height: 100px;
+  background: white;
+  mix-blend-mode: difference;
+  border-radius: 50%;
+  transform: translate(0,0);
+  transition: transform 0.15s;
+  transition-timing-function: ease-out;
+  z-index: 99;
+  transform: scale(2, 2);
+  display: none;
+}
+
+/*---------------------------------------------------------------*/
+
+#loading-wave {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  height:100vh;
+  animation-name: wave-1;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+  transform: translateX(-80vw);
+}
+#loading-wave:nth-child(odd) {
+  animation-name: wave-2;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  transform: translateX(0);
+}
+#loading {
+  background-color: #fff;
+  width: 100vw;
+  height: 100vh;
+
+  visibility: visible;
+}
+.load-text {
+  margin-top: 50vh;
+  font-size: 30px;
+  text-align: center;
+  font-family: serif;
+}
+@keyframes wave-1 {
+  0% {
+    transform: translateX(-80vw);
+  }
+  50% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-80vw);
+  }
+}
+@keyframes wave-2 {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(-80vw);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+/*---------------------------------------------------------------*/
+
+footer {
+  position: sticky;
+  top: 0;
+}
+
+footer p {
+  color: #c0c0c0;
+  z-index: 999;
+  text-align: center;
+  background-color: #000;
+  margin: 0;
+  padding: 10px;
+}
+
+/*---------------------------------------------------------------*/
+
+.pagetop{
+    display: none;
+    position: fixed;
+    right: 50px;
+    bottom: 60px;
+}
+.pagetop a{
+    display: block;
+    font-size: 0;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    background: #404040;
+    border-radius: 50%;
+    line-height: 50px;
+}
+.pagetop a i{
+    font-size: 20px;
+    color:#fff;
+    line-height: 50px;
+}
