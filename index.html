@@ -3,10 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <title>鎌倉の海を守るためには...</title>
-
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Yuji+Syuku&display=swap" rel="stylesheet">
   <link rel ="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
   <link rel="stylesheet" href="style.css">
   <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="jquery.bgswitcher.js"></script>
 </head>
 
 <body>
@@ -18,63 +21,85 @@
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" id="loading-wave"><path fill="#0099ff" fill-opacity="0.2" d="M0,64L34.3,74.7C68.6,85,137,107,206,112C274.3,117,343,107,411,106.7C480,107,549,117,617,122.7C685.7,128,754,128,823,133.3C891.4,139,960,149,1029,165.3C1097.1,181,1166,203,1234,208C1302.9,213,1371,203,1406,197.3L1440,192L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z"></path></svg>
   </div>
 
-  <div class="hidden-border"></div>
-
   <div class="base" id="luxy">
-      <section class="section-1" id="section-1">
+    <div class="title_img">
+        <div class="bg_img"></div>
         <div class="catchcopy">
-          <p class="text_1">本当に、これで</p>
-          <p class="text_2">いいんですか？</p>
-        </div>
-        <div class="mosaic_img_area" id="mosaic_img_area">
-          <img class="mosaic_img" src="gomiMosaic15-2.jpg">
-        </div>
-      </section>
+          <p class="catchcopy_text">鎌倉の海を守るために</p>
 
-      <section class="section-2">
-        <img src="kujira.jpg" class="kujira contents_img">
-        <div class="explanation">
-          <p class="text-section">2018年の夏に由比ヶ浜にシロナガスクジラが打ち上げられました。そのシロナガスクジラの胃の中からプラスチックが見つかりました。そのことは死因に関係ないといわれていますが、海の環境が確実に悪くなっていることは伝わってきます。</p>
-          <p class="text-section">神奈川県の<a href="https://www.pref.kanagawa.jp/docs/p3k/sdgs/index.html">神奈川のホームページ</a>に「『クジラからのメッセージ』として受け止め、持続可能な社会を目指すSDGsの具体的な取組として、深刻化する海洋汚染、特にマイクロプラスチック問題に取り組みます。」と書かれており、神奈川県でも深刻な問題となっています。</p>
         </div>
-      </section>
-
-      <section class="section-3">
-        <img src="table.jpg" class="table contents_img">
+      </div>
+      <div class="main_content">
+      <section>
+        <h2>鎌倉海岸の今の状況は？</h2>
+        <div class="content">
+        <img src="kujira.jpg" class="contents_img">
         <div class="explanation">
+          <div>
+          <p class="text-section">鎌倉では2018年の夏にシロナガスクジラが海岸に打ち上げられました。このシロナガスクジラの胃から多くの<strong>プラスチックゴミ</strong>が見つかりました。</p>
+          <p class="text-section">海の環境が確実に悪くなっていることが伝わってきます。</p>
+          </div>
+        </div>
+        </div>
+        <div class="content">
+        <img src="gomi-utiwake.jpg" class="contents_img">
+        <div class="explanation">
+          <div>
           <p class="text-section">左の表はかながわ美化財団の海岸ゴミの内訳をあらわした表です。割合はプラスチックの排出が一番多く、平成28~30年で130kgとなっています。</p>
           <p class="text-section">また、平成4~6年と平成28~30年では約3.5倍になっています。プラスチックごみの割合も増え、プラスチックゴミの問題がシロナガスクジラの問題も考え、深刻化していると考える事ができます。</p>
+          </div>
+        </div>
+      </div>
+      </section>
+
+      <section>
+        <h2>このままだと...</h2>
+        <div class="content">
+        <img src="plastics-fish.jpg" class="contents_img">
+        <div class="explanation">
+          <div>
+          <p class="text-section">このまま対策しないと2050年には海洋ごみの重量が魚の重量を超えるという試算が出ています。左の図は<a href="https://www3.weforum.org/docs/WEF_The_New_Plastics_Economy.pdf">エレンマッカーサー財団のThe New Plastics Economy</a>に載せられている海洋ごみなどの環境問題についての予想を示した画像です。</p>
+          </div>
+        </div>
+        </div>
+        <div class="content">
+          <img src="1.png" class="contents_img">
+          <div class="explanation">
+            <div>
+              <p class="text-section">また、2040年には対策をしなかった場合、1年間のゴミの排出量が今の約3倍の2900万トンになることが予測されています。</p>
+            </div>
+          </div>
         </div>
       </section>
 
-      <section class="section-4">
+      <section>
+        <h2>この状況を立て直すには？</h2>
+        <div class="content">
         <div class="explanation">
-          <p class="text-section">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
-          <p class="text-section">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
-          <p class="text-section">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+          <div>
+          <p class="text-section">個人でできる対策として、ビーチクリーンなどの清掃活動に参加することや使い捨てプラスチックを減らすようにすしたり、リサイクルに積極的に取り組むことなどの対策があります。</p>
+          <p class="text-section">海洋ごみがマイクロプラスチックになってしまうと回収がとても難しくなります。なので、ビーチクリーンなどの清掃活動に参加することで海のプラスチックごみがマイクロプラスチックになる前に回収し、悪化を防ぐことができます。</p>
+
+          </div>
+        </div>
+        </div>
+        <div class="content">
+          <div class="explanation">
+            <div>
+              <p class="text-section">また、使い捨てプラスチックの削減やリサイクルに積極的に取り組むことによって約20%プラスチックの排出量を減らすことができます。</p>
+            </div>
+          </div>
         </div>
       </section>
 
-      <section class="section-5">
-        <div class="explanation">
-          <p class="text-section">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
-          <p class="text-section">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
-          <p class="text-section">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
-        </div>
-      </section>
-
-      <section class="section-6">
-        <div class="explanation">
-          <p class="text-section">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
-          <p class="text-section">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
-          <p class="text-section">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
-        </div>
-      </section>
-      <section class="section-7">
-        <div class="explanation">
-          <p class="text-section">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
-          <p class="text-section">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
-          <p class="text-section">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+      <section>
+        <h2>参考資料</h2>
+        <div class="reference-list">
+          <p class="reference-url"><a href="https://rief-jp.org/ct12/82251">https://rief-jp.org/ct12/82251</a></p>
+          <p class="reference-url"><a href="https://www.bikazaidan.or.jp/kaigangomi/kaigangomi3/">https://www.bikazaidan.or.jp/kaigangomi/kaigangomi3/</a></p>
+          <p class="reference-url"><a href="https://www3.weforum.org/docs/WEF_The_New_Plastics_Economy.pdf">https://www3.weforum.org/docs/WEF_The_New_Plastics_Economy.pdf</a></p>
+          <p class="reference-url"><a href="https://www.pewtrusts.org/ja/research-and-analysis/articles/2020/07/23/breaking-the-plastic-wave-top-findings">https://www.pewtrusts.org/ja/research-and-analysis/articles/2020/07/23/breaking-the-plastic-wave-top-findings</a></p>
+          <p class="reference-url"><a href="https://www.pewtrusts.org/-/media/assets/2020/10/breakingtheplasticwave_mainreport.pdf">https://www.pewtrusts.org/-/media/assets/2020/10/breakingtheplasticwave_mainreport.pdf</a></p>
         </div>
       </section>
 
@@ -82,6 +107,7 @@
         <p>&copy; 2022 katatsumuri</p>
       </footer>
 
+      </div>
   </div>
   <div id="page_top" class="pagetop">
     <a href="#">
@@ -89,10 +115,6 @@
     </a>
   </div>
   <div id="stalker" class="stalker"></div>
-
-  <div class="lens_img_box">
-    <img class="lens_img" id="lens_img" src='gomi Mosaic15-3.jpg'>
-  </div>
 
   <script type="text/javascript" src="script.js"></script>
 
