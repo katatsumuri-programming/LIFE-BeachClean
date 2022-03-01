@@ -1,16 +1,5 @@
 
-@font-face {
-  font-family: "antique";
-  src: url("ZenAntique-Regular.ttf");
-}
-@font-face {
-  font-family: "gennokakugogothic";
-  src: url("SourceHanSans-Medium.otf");
-}
-@font-face {
-  font-family: "gennokakumincho";
-  src: url("SourceHanSerif-Medium.otf");
-}
+
 body {
   margin: 0;
   padding: 0;
@@ -39,7 +28,6 @@ body {
 a {
   color: #006e54;
   text-decoration: none;
-  cursor: none !important;
   word-wrap:break-word;
 }
 
@@ -67,7 +55,7 @@ img {
   height: 100%;
   margin: auto;
   font-size: 5vh;
-  font-family: "antique";
+  font-family: 'Zen Antique Soft', serif;
   font-weight: 100;
 }
 .catchcopy_text {
@@ -86,6 +74,7 @@ img {
   height: 100vh;
   background-size: cover;
   background-position: center;
+  margin-top: -10vh;
 }
 .bg_img img {
   height: 100%;
@@ -94,23 +83,28 @@ img {
   height: 100%;
   margin: auto;
   font-size: 8vh;
-  font-family: "antique";
+  font-family: 'Zen Antique Soft', serif;
   font-weight: 300;
   margin-top: 50px;
   margin-left: 80px;
 }
 
 .text-section {
-  font-family: "gennokakumincho";
+  font-family: 'Sawarabi Mincho', serif;
   font-size: 3vh;
   margin-top: 0;
 }
 .reference-list {
-  font-family: "gennokakumincho";
-  font-size: 2.5vh;
+  font-family: 'Sawarabi Mincho', serif;
+  font-size: 1.8vh;
   width: 80vw;
+  margin: 0;
   margin-left: 10vw;
   margin-bottom: 5vh;
+}
+.reference-url {
+  margin: 0;
+  line-height: 2em;
 }
 .content {
   display: flex;
@@ -149,6 +143,9 @@ section img {
 
 .content {
   margin-top: 50px;
+  align-items: flex-start;
+  justify-content: center;
+  align-items: center;
 }
 section:nth-child(2) .contents_img {
   width: 30vw;
@@ -162,9 +159,13 @@ section:nth-child(3) .explanation {
   width: 80vw;
   margin-left: 10vw;
 }
+.contents_img {
+  height: auto;
+  justify-content: center;
+}
 
 /*---------------------------------------------------------------*/
-
+/*
 #stalker {
   pointer-events: none;
   position: fixed;
@@ -182,7 +183,7 @@ section:nth-child(3) .explanation {
   transform: scale(2, 2);
   display: none;
 }
-
+*/
 /*---------------------------------------------------------------*/
 
 #loading-wave {
@@ -272,4 +273,78 @@ footer p {
   font-size: 20px;
   color:#fff;
   line-height: 50px;
+}
+
+
+@media screen and (max-width: 767px) {
+  section h2 {
+    font-size: 7vw;
+    background-size: 20vh;
+  }
+  .explanation {
+    display: block;
+    margin: 5vw;
+  }
+  section:nth-child(2) .explanation {
+    margin: 5vw;
+  }
+  section:nth-child(3) .explanation {
+    width: 90vw;
+    margin: 5vw;
+  }
+  .content {
+    display: block;
+  }
+  section:nth-child(2) .contents_img {
+    width: 90vw;
+    margin: 5vw;
+  }
+  .content img {
+    width: 90vw;
+  }
+  .text-section {
+    width: 90vw;
+    font-size: 4.5vw;
+    letter-spacing: 0.1em;
+    line-height: 1.6em;
+  }
+  .pagetop {
+    display: none !important;
+  }
+  .stalker {
+    display: none !important;
+  }
+}
+
+/*----------------------------------------------------------------*/
+li {
+  display: inline-block;
+  padding-left: 2vw;
+  font-family: 'Yuji Syuku', serif;
+  cursor: pointer;
+}
+header img {
+  width: 6vh;
+  height: 6vh;
+  padding: 2vh;
+  padding-left: 5vh;
+}
+header h1 {
+  margin: 0;
+  height: 10vh;
+  line-height:10vh;
+  padding-left: 1.5vw;
+  font-family: 'Zen Antique Soft', serif;
+  font-weight:200;
+}
+nav {
+  margin: 0 5vw 0 auto;
+  font-size: 2vh;
+}
+header {
+  display: flex;
+  height: 10vh;
+  position: sticky;
+  top: 0;
+  z-index: 50;
 }

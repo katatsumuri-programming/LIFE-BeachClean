@@ -3,11 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <title>鎌倉の海を守るためには...</title>
+  <link rel=”icon” href=“favicon.ico”>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Yuji+Syuku&display=swap" rel="stylesheet">
+  <meta name="theme-color" content="#a0d8ef">
+  <link href="https://fonts.googleapis.com/css2?family=Sawarabi+Mincho&family=Yuji+Syuku&family=Zen+Antique+Soft&display=swap" rel="stylesheet">
   <link rel ="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
-  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <link rel="stylesheet" href="style.css" type="text/css" >
+
   <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
   <script src="jquery.bgswitcher.js"></script>
 </head>
@@ -20,70 +24,84 @@
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" id="loading-wave"><path fill="#0099ff" fill-opacity="0.2" d="M0,32L34.3,53.3C68.6,75,137,117,206,144C274.3,171,343,181,411,160C480,139,549,85,617,58.7C685.7,32,754,32,823,80C891.4,128,960,224,1029,272C1097.1,320,1166,320,1234,293.3C1302.9,267,1371,213,1406,186.7L1440,160L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z"></path></svg>
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" id="loading-wave"><path fill="#0099ff" fill-opacity="0.2" d="M0,64L34.3,74.7C68.6,85,137,107,206,112C274.3,117,343,107,411,106.7C480,107,549,117,617,122.7C685.7,128,754,128,823,133.3C891.4,139,960,149,1029,165.3C1097.1,181,1166,203,1234,208C1302.9,213,1371,203,1406,197.3L1440,192L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z"></path></svg>
   </div>
-
+  <header>
+    <img src="favicon.ico">
+    <h1>鎌倉の海を守るために</h1>
+    <nav>
+    <ul>
+      <li class="top"><p>Top</p></li>
+      <li class="now"><p>鎌倉の今</p></li>
+      <li class="future"><p>鎌倉の今後</p></li>
+      <li class="improvement"><p>改善策</p></li>
+    </ul>
+    </nav>
+  </header>
   <div class="base" id="luxy">
     <div class="title_img">
-        <div class="bg_img"></div>
-        <div class="catchcopy">
-          <p class="catchcopy_text">鎌倉の海を守るために</p>
-
-        </div>
+      <div class="bg_img"></div>
+      <div class="catchcopy">
+        <p class="catchcopy_text">鎌倉の海を守るために</p>
       </div>
-      <div class="main_content">
-      <section>
+    </div>
+
+    <div class="main_content">
+      <section class="now_content">
         <h2>鎌倉海岸の今の状況は？</h2>
         <div class="content">
-        <img src="kujira.jpg" class="contents_img">
-        <div class="explanation">
-          <div>
-          <p class="text-section">鎌倉では2018年の夏にシロナガスクジラが海岸に打ち上げられました。このシロナガスクジラの胃から多くの<strong>プラスチックゴミ</strong>が見つかりました。</p>
-          <p class="text-section">海の環境が確実に悪くなっていることが伝わってきます。</p>
-          </div>
-        </div>
-        </div>
-        <div class="content">
-        <img src="gomi-utiwake.jpg" class="contents_img">
-        <div class="explanation">
-          <div>
-          <p class="text-section">左の表はかながわ美化財団の海岸ゴミの内訳をあらわした表です。割合はプラスチックの排出が一番多く、平成28~30年で130kgとなっています。</p>
-          <p class="text-section">また、平成4~6年と平成28~30年では約3.5倍になっています。プラスチックごみの割合も増え、プラスチックゴミの問題がシロナガスクジラの問題も考え、深刻化していると考える事ができます。</p>
-          </div>
-        </div>
-      </div>
-      </section>
-
-      <section>
-        <h2>このままだと...</h2>
-        <div class="content">
-        <img src="plastics-fish.jpg" class="contents_img">
-        <div class="explanation">
-          <div>
-          <p class="text-section">このまま対策しないと2050年には海洋ごみの重量が魚の重量を超えるという試算が出ています。左の図は<a href="https://www3.weforum.org/docs/WEF_The_New_Plastics_Economy.pdf">エレンマッカーサー財団のThe New Plastics Economy</a>に載せられている海洋ごみなどの環境問題についての予想を示した画像です。</p>
-          </div>
-        </div>
-        </div>
-        <div class="content">
-          <img src="1.png" class="contents_img">
+          <img src="https://res.cloudinary.com/dtsetxfcq/image/upload/v1644111386/LifeBeachClean/kujira_zrzxq8.jpg" class="contents_img" id="kujira">
           <div class="explanation">
             <div>
-              <p class="text-section">また、2040年には対策をしなかった場合、1年間のゴミの排出量が今の約3倍の2900万トンになることが予測されています。</p>
+              <p class="text-section">鎌倉では2018年の夏にシロナガスクジラが海岸に打ち上げられました。このシロナガスクジラの胃から多くの<strong>プラスチックゴミ</strong>が見つかりました。</p>
+              <p class="text-section">場合によっては海洋プラチックごみは生物を殺してしまうこともあります。タイ南部で死亡したゴンドウクジラが約８０個のビニール袋を飲み込んでいることが判明しています。</p>
+            </div>
+          </div>
+        </div>
+        <div class="content">
+          <img src="https://res.cloudinary.com/dtsetxfcq/image/upload/v1644111386/LifeBeachClean/gomi-utiwake_kudefd.jpg" class="contents_img" id="gomi-utiwake">
+          <div class="explanation">
+            <div>
+              <p class="text-section">神奈川美化財団の調査によると海に落ちている人口ゴミの約６割はプラスチックごみだということがわかっています。</p>
+              <p class="text-section">プラスチックごみは分解に約450年かかります。私達がポイ捨てするのは数秒の話ですが、450年後も残り続け、海洋に大きな問題を与えます。</p>
             </div>
           </div>
         </div>
       </section>
 
-      <section>
-        <h2>この状況を立て直すには？</h2>
+      <section class="future_content">
+        <h2>このままだと...</h2>
         <div class="content">
-        <div class="explanation">
-          <div>
-          <p class="text-section">個人でできる対策として、ビーチクリーンなどの清掃活動に参加することや使い捨てプラスチックを減らすようにすしたり、リサイクルに積極的に取り組むことなどの対策があります。</p>
-          <p class="text-section">海洋ごみがマイクロプラスチックになってしまうと回収がとても難しくなります。なので、ビーチクリーンなどの清掃活動に参加することで海のプラスチックごみがマイクロプラスチックになる前に回収し、悪化を防ぐことができます。</p>
-
+          <img src="https://res.cloudinary.com/dtsetxfcq/image/upload/v1644111566/LifeBeachClean/plastics-fish_ychyzj.jpg" class="contents_img" id="plastics-fish">
+          <div class="explanation">
+            <div>
+              <p class="text-section">このまま対策しないと2050年には海洋ごみの重量が魚の重量を超えるという試算が出ています。左の図は<a href="https://www3.weforum.org/docs/WEF_The_New_Plastics_Economy.pdf">エレンマッカーサー財団のThe New Plastics Economy</a>に載せられている海洋ごみなどの環境問題についての予想を示したものです。</p>
+              <p class="text-section">この図を見ると、2014年は海洋プラスチックごみと魚の比は約1:3ですが、2015年には1:1にまでに上がるという予想を示しています。</p>
+            </div>
           </div>
         </div>
+        <div class="content">
+          <img src="https://res.cloudinary.com/dtsetxfcq/image/upload/v1644111386/LifeBeachClean/1_v2sfkc.png" class="contents_img">
+          <div class="explanation">
+            <div>
+              <p class="text-section">また、2040年には対策をしなかった場合、1年間のゴミの排出量が今の約3倍の2900万トンになることが予測されています。</p>
+              <p class="text-section">2900万トンとは東京スカイツリーの約750倍の重さです。</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="improvement_content">
+        <h2>この状況を立て直すには？</h2>
+        <div class="content">
+          <img src="https://res.cloudinary.com/dtsetxfcq/image/upload/v1646139189/LifeBeachClean/brian-yurasits-0G2jF-c704s-unsplash_kybwr4.jpg" class="contents_img">
+          <div class="explanation">
+            <div>
+              <p class="text-section">個人でできる対策として、ビーチクリーンなどの清掃活動に参加することや使い捨てプラスチックを減らすようにすしたり、リサイクルに積極的に取り組むことなどの対策があります。</p>
+              <p class="text-section">海洋ごみがマイクロプラスチックになってしまうと回収がとても難しくなります。なので、ビーチクリーンなどの清掃活動に参加することで海のプラスチックごみがマイクロプラスチックになる前に回収し、悪化を防ぐことができます。</p>
+            </div>
+          </div>
         </div>
         <div class="content">
+          <img src="https://res.cloudinary.com/dtsetxfcq/image/upload/v1644111386/LifeBeachClean/2_zumkph.jpg" class="contents_img">
           <div class="explanation">
             <div>
               <p class="text-section">また、使い捨てプラスチックの削減やリサイクルに積極的に取り組むことによって約20%プラスチックの排出量を減らすことができます。</p>
@@ -100,6 +118,14 @@
           <p class="reference-url"><a href="https://www3.weforum.org/docs/WEF_The_New_Plastics_Economy.pdf">https://www3.weforum.org/docs/WEF_The_New_Plastics_Economy.pdf</a></p>
           <p class="reference-url"><a href="https://www.pewtrusts.org/ja/research-and-analysis/articles/2020/07/23/breaking-the-plastic-wave-top-findings">https://www.pewtrusts.org/ja/research-and-analysis/articles/2020/07/23/breaking-the-plastic-wave-top-findings</a></p>
           <p class="reference-url"><a href="https://www.pewtrusts.org/-/media/assets/2020/10/breakingtheplasticwave_mainreport.pdf">https://www.pewtrusts.org/-/media/assets/2020/10/breakingtheplasticwave_mainreport.pdf</a></p>
+          <p  class="reference-url"><a href="https://theoceancleanup.com/updates/where-mismanaged-plastic-waste-is-generated-and-possible-paths-of-change/">https://theoceancleanup.com/updates/where-mismanaged-plastic-waste-is-generated-and-possible-paths-of-change/</a></p>
+          <p  class="reference-url"><a href="https://www.nippon-foundation.or.jp/journal/2019/20107">https://www.nippon-foundation.or.jp/journal/2019/20107</a></p>
+          <p  class="reference-url"><a href="https://www.nationalgeographic.com/science/article/plastic-trash-in-seas-will-nearly-triple-by-2040-if-nothing-done">https://www.nationalgeographic.com/science/article/plastic-trash-in-seas-will-nearly-triple-by-2040-if-nothing-done</a></p>
+          <p  class="reference-url"><a href="https://natgeo.nikkeibp.co.jp/atcl/news/20/073000450/">https://natgeo.nikkeibp.co.jp/atcl/news/20/073000450/</a></p>
+          <p  class="reference-url"><a href="https://www.env.go.jp/policy/hakusyo/r02/html/hj20010103.html">https://www.env.go.jp/policy/hakusyo/r02/html/hj20010103.html</a></p>
+          <p  class="reference-url"><a href="https://www.asahi.com/eco/chikyuihen/oceanplastic/">https://www.asahi.com/eco/chikyuihen/oceanplastic/</a></p>
+          <p  class="reference-url"><a href="https://plastics-japan.com/archives/2875">https://plastics-japan.com/archives/2875</a></p>
+          <p class="reference-url"><a href="https://www.nacsj.or.jp/2020/09/21731/">https://www.nacsj.or.jp/2020/09/21731/</a></p>
         </div>
       </section>
 
@@ -114,7 +140,6 @@
       <i class="fas fa-chevron-up"></i>
     </a>
   </div>
-  <div id="stalker" class="stalker"></div>
 
   <script type="text/javascript" src="script.js"></script>
 
