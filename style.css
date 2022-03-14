@@ -336,6 +336,7 @@ header h1 {
   padding-left: 1.5vw;
   font-family: 'Zen Antique Soft', serif;
   font-weight:200;
+  color: #fff;
 }
 nav {
   margin: 0 5vw 0 auto;
@@ -347,4 +348,5 @@ header {
   position: sticky;
   top: 0;
   z-index: 50;
+  color: white;
 }
