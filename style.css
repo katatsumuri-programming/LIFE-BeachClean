@@ -349,4 +349,5 @@ header {
   top: 0;
   z-index: 50;
   color: white;
+  transition: background-color 500ms 0s ease;
 }
