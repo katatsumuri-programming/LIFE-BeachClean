@@ -65,9 +65,11 @@ $(function() {
     if (((scroll) / (window.innerHeight)) > 0.8) {
       $("header").css("background-color", "rgba(255,255,255,0.9)");
       $("header h1").css("color", "#000");
+      $("header nav").css("color", "#000");
     } else {
       $("header").css("background-color", "rgba(0,0,0,0)");
       $("header h1").css("color", "#fff");
+      $("header nav").css("color", "#fff");
     }
   });
 });
