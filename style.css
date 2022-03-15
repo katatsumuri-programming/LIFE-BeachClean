@@ -341,6 +341,7 @@ header h1 {
 nav {
   margin: 0 5vw 0 auto;
   font-size: 2vh;
+  color: #fff;
 }
 header {
   display: flex;
